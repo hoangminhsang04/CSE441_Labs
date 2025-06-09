@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tv_app_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Karaoke Viet Nam"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#3F51B5"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="16dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingVertical="8dp"
+        android:paddingHorizontal="12dp">
+
+        <TextView
+            android:id="@+id/txtmaso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="52300"
+            android:textSize="20sp"
+            android:textColor="#0000FF"
+            android:textStyle="bold"
+            android:layout_marginEnd="8dp" />
+
+        <TextView
+            android:id="@+id/txttieude"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Em là ai Tôi là ai"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:maxLines="1"
+            android:ellipsize="end" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp">
+
+            <ImageButton
+                android:id="@+id/btnlike"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Like"
+                android:minWidth="48dp"
+                android:minHeight="48dp"
+                android:padding="8dp"
+                android:src="@drawable/like"
+                android:visibility="visible"
+                app:tint="#FF0000" />
+
+            <ImageButton
+                android:id="@+id/btnunlike"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:minWidth="48dp"
+                android:minHeight="48dp"
+                android:padding="8dp"
+                android:src="@drawable/unlike"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Unlike"
+                android:visibility="gone"
+                app:tint="#808080" />
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>
