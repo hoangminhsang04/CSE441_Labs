@@ -1,6 +1,100 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent">
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:stretchColumns="1"
+    android:padding="16dp">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <!-- TextView mã số, thêm id txtmaso -->
+    <TableRow>
+        <TextView
+            android:id="@+id/txtmaso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mã số"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:layout_span="2"/>
+    </TableRow>
+
+    <TableRow android:paddingTop="8dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tên bài hát:" />
+
+        <TextView
+            android:id="@+id/txtbaihat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CHÊN ĐẮNG (REMIX)"
+            android:textColor="#00CC00"
+            android:textStyle="bold"/>
+    </TableRow>
+
+    <TableRow android:paddingTop="8dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lời bài hát:" />
+
+        <TextView
+            android:id="@+id/txtloibaihat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Một ngày anh nhớ, nhớ bóng hình em, trái tim Một ngày anh nhớ, nhớ bóng hình em, trái tim Một ngày anh nhớ, nhớ bóng hình em, trái tim"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="#555"/>
+    </TableRow>
+
+    <TableRow android:paddingTop="8dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tác giả:" />
+
+        <TextView
+            android:id="@+id/txttacgia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Trương Lê Sơn"/>
+    </TableRow>
+
+    <TableRow android:paddingTop="8dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yêu Thích:" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/btnthich"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:padding="8dp"
+                android:src="@drawable/like"
+                app:tint="#FF0000"
+                android:background="@null"
+                android:contentDescription="Like"
+                android:visibility="visible" />
+
+            <ImageButton
+                android:id="@+id/btnkhongthich"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:padding="8dp"
+                android:src="@drawable/unlike"
+                android:background="@null"
+                android:contentDescription="Unlike"
+                android:visibility="gone" />
+        </FrameLayout>
+    </TableRow>
+
+</TableLayout>
