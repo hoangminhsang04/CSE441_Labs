@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:stretchColumns="*"
+    android:padding="12dp"
+    android:background="@android:color/white">
+
+    <!-- Hàng 1: Hình + MuaTM/BanTM -->
+    <TableRow>
+
+        <ImageView
+            android:id="@+id/imgHinh"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_launcher_foreground"
+            android:contentDescription="Cờ quốc gia"
+            android:layout_marginEnd="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MuaTM:"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtMuaTM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="16220" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BánTM:"
+            android:textStyle="bold"
+            android:layout_marginStart="12dp" />
+
+        <TextView
+            android:id="@+id/txtBanTM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="16370" />
+    </TableRow>
+
+    <!-- Hàng 2: Loại + MuaCK/BanCK -->
+    <TableRow>
+
+        <TextView
+            android:id="@+id/txtType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="USD"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_blue_dark"
+            android:layout_marginEnd="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MuaCK:"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtMuaCK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="22920" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BánCK:"
+            android:textStyle="bold"
+            android:layout_marginStart="12dp" />
+
+        <TextView
+            android:id="@+id/txtBanCK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="23170" />
+    </TableRow>
+
+</TableLayout>
